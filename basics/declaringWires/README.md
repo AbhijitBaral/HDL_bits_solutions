@@ -1,6 +1,9 @@
 ## Declaring wires
 The circuits so far have been simple enough that the outputs are simple functions of the inputs. As circuits become more complex, you will need wires to connect internal components together. When you need to use a wire, you should declare it in the body of the module, somewhere before it is first used. (In the future, you will encounter more types of signals and variables that are also declared the same way, but for now, we'll start with a signal of type wire).
 
+## Example
+![fe](https://github.com/AbhijitBaral/HDL_bits_solutions/blob/main/basics/declaringWires/imgs/Wiredecl1.png)
+
 ```
 module top_module (
     input in,              // Declare an input wire named "in"
@@ -23,5 +26,12 @@ Implement the following circuit. Create two intermediate wires (named anything y
 If you're following the circuit structure in the diagram, you should end up with four assign statements, as there are four signals that need a value assigned.
 
 (Yes, it is possible to create a circuit with the same functionality without the intermediate wires.)
+![fef](https://github.com/AbhijitBaral/HDL_bits_solutions/blob/main/basics/declaringWires/imgs/Wiredecl2.png)
 
+
+## Timing diagrams for selected test cases
+These are timing diagrams from some of the test cases we used. They may help you debug your circuit. The diagrams show inputs to the circuit, outputs from your circuit, and the expected reference outputs. The "Mismatch" trace shows which cycles your outputs don't match the reference outputs (0 = correct, 1 = incorrect).
+
+Exhaustive test
+![vdv](https://github.com/AbhijitBaral/HDL_bits_solutions/blob/main/basics/declaringWires/imgs/2024-12-04_13-06.png)
 
